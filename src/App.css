@@ -1,39 +1,87 @@
-.App {
-  text-align: center;
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 5% auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th,
+td {
+  text-align: left;
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+th {
+  background-color: #4caf50;
+  color: white;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 10px;
+  margin: 8px 8px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+button:hover {
+  opacity: 0.8;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.card {
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80vw;
+  margin: 5% auto;
+}
+
+.topContent {
+  padding: 22px 32px;
+}
+
+.topContent > * {
+  margin: 0 auto;
+}
+
+.topContent h4 {
+  color: rgba(128, 128, 128, 0.453);
+  font-size: 0.9rem;
+}
+
+.topContent h2 {
+  font-size: 1.2rem;
+}
+
+h1 span {
+  color: rgba(128, 128, 128, 0.464);
+  font-size: 1rem;
+  vertical-align: super;
+}
+
+.topContent div h1 {
+  margin-bottom: 0;
+}
+
+.topContent div h4 {
+  margin-top: 0;
 }
