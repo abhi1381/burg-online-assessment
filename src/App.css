@@ -26,7 +26,14 @@ button {
   margin: 8px 8px;
   border: none;
   cursor: pointer;
-  width: 20vw;
+  width: 10vw;
+}
+
+/* media query for width less than 460px */
+@media screen and (max-width: 460px) {
+  button {
+    width: 20vw;
+  }
 }
 
 button:hover {
